@@ -1,0 +1,13 @@
+services:
+  embedding-server:
+    build: .
+    image: embedding-server:latest
+    container_name: embedding-server
+    ports:
+      - "2333:2333"
+    volumes:
+      - /Users/hagemon/LLM:/app/models # Mount your local path here
+      - ./emb-server:/app/emb-server
+      - ./config.yaml:/app/config.yaml
+    environment:
+      - MAX_PARALLEL_REQUESTS=3

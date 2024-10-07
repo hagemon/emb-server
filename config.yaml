@@ -1,0 +1,7 @@
+base_path: "/app/models"
+
+model_path:
+  bge: "bge-m3"
+  bge-reranker: "bge-reranker-v2-m3"
+  bce: "bce-embedding-base_v1"
+  bce-reranker: "bce-reranker-base_v1"
